@@ -119,6 +119,7 @@ function readProducts() {
 }
 
 function getListing() {
+  productArr = [];
   connection.query("SELECT * FROM auctions", function (err, res) {
     if (err) throw err;
     for (i = 0; i < res.length; i++) {

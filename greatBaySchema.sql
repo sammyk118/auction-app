@@ -11,3 +11,6 @@ CREATE TABLE auctions(
   highest_bid INT default 0,
   PRIMARY KEY (id)
 );
+
+INSERT INTO auctions (item_name, category, starting_bid)
+VALUES ("nike", "shoes", 10), ("wooden chair", "chairs", 50), ("yacht", "boats", 1000000);
